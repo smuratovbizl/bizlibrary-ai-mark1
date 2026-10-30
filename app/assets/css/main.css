@@ -16,6 +16,26 @@
 }
 
 /*
+ * One-time fade/scale-in entrance for the hero block on initial page load.
+ * Independent of the `.fade-*` rotation transition above, which keeps
+ * handling the message swap itself.
+ */
+@keyframes hero-intro {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.hero-intro {
+  animation: hero-intro 0.8s ease-out both;
+}
+
+/*
  * "Synthwave" is the third, surprise theme (in addition to light/dark)
  * requested in https://github.com/smuratovbizl/bizlibrary-ai-mark1/issues/1.
  * It overrides the same Nuxt UI design tokens that `.light`/`.dark` define,
