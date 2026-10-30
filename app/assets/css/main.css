@@ -2,6 +2,20 @@
 @import "@nuxt/ui";
 
 /*
+ * Fade transition for the landing page's rotating center message, requested
+ * in https://github.com/smuratovbizl/bizlibrary-ai-mark1/issues/3.
+ */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.6s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+/*
  * "Synthwave" is the third, surprise theme (in addition to light/dark)
  * requested in https://github.com/smuratovbizl/bizlibrary-ai-mark1/issues/1.
  * It overrides the same Nuxt UI design tokens that `.light`/`.dark` define,
