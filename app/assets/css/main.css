@@ -1,2 +1,30 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
+
+/*
+ * "Synthwave" is the third, surprise theme (in addition to light/dark)
+ * requested in https://github.com/smuratovbizl/bizlibrary-ai-mark1/issues/1.
+ * It overrides the same Nuxt UI design tokens that `.light`/`.dark` define,
+ * so every component automatically restyles when this class is active.
+ */
+.synthwave {
+  --ui-text-dimmed: #9a86c9;
+  --ui-text-muted: #b39ddb;
+  --ui-text-toned: #d1b3ff;
+  --ui-text: #f0e6ff;
+  --ui-text-highlighted: #ffffff;
+  --ui-text-inverted: #1a0b2e;
+
+  --ui-bg: #1a0b2e;
+  --ui-bg-muted: #241244;
+  --ui-bg-elevated: #2d1b4e;
+  --ui-bg-accented: #3d2766;
+  --ui-bg-inverted: #ffffff;
+
+  --ui-border: #3d2766;
+  --ui-border-muted: #2d1b4e;
+  --ui-border-accented: #5e3a99;
+  --ui-border-inverted: #ffffff;
+
+  --ui-primary: #ff2ec4;
+}
